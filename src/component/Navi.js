@@ -6,7 +6,10 @@ const Navi = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/Auth">Auth</Link>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/Pages">Pages</Link>
         </li>
         <li>
           <Link to="/Chat">Chat</Link>
