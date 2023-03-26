@@ -13,7 +13,7 @@ const AppRouter = ({ userObj }) => {
       <Routes>
         {userObj ? (
           <>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={<Home userObj={userObj} />} />
             <Route exact path="/pages" element={<Pages />} />
             <Route exact path="/chat" element={<Chat />} />
           </>

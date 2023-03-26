@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
-import style from "../CSS/style.css";
+import "CSS/Chat.css";
 const Chat = () => {
   const [myChat, setMyChat] = useState(""); // 내가 작성한 채팅 텍스트
   const [aiAnswer, setAiAnswer] = useState(""); // 답변 텍스트

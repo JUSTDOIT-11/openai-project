@@ -1,14 +1,24 @@
 import React from "react";
 import { auth } from "fbase";
 
-const Home = () => {
-  const onClick = () => {
+const Home = ({ userObj }) => {
+  //로그아웃 버튼
+  const onLogoutClick = () => {
     auth.signOut();
   };
+
   return (
     <>
-      <h1>home</h1>
-      <button onClick={onClick}>로그아웃</button>
+      {userObj.isAnonymous ? (
+        <h1>
+          <i>Guest</i> 님 환영합니다.
+        </h1>
+      ) : (
+        <h1>
+          <i>{userObj.displayName}</i> 님 환영합니다.
+        </h1>
+      )}
+      <button onClick={onLogoutClick}>로그아웃</button>
     </>
   );
 };

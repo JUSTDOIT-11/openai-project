@@ -11,7 +11,7 @@ import {
 const Auth = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errMsg, setErrMsg] = useState("");
+  //const [errMsg, setErrMsg] = useState("");
   //id, password input값과 동기화
   const onChange = (e) => {
     const {

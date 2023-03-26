@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import AppRouter from "./Router";
 import { auth } from "fbase";
 import { onAuthStateChanged } from "firebase/auth";
+import "CSS/App.css";
 
 function App() {
   const [waiting, setWating] = useState(false); //로그인 유무를 확인하는 동안 기다림..
@@ -11,7 +12,7 @@ function App() {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUserObj(user);
-        console.log(user);
+        console.log(user, user.isAnonymous);
       } else {
         setUserObj(null);
       }

@@ -1,0 +1,28 @@
+.weather-bigbox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.weather-box {
+  width: 60rem;
+  height: 70rem;
+  background-color: #0c131e;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.weather-box__div {
+  background-color: #202b3b;
+  width: 40rem;
+  height: 30rem;
+  margin-bottom: 1em;
+  border-radius: 1rem;
+}
+
+.weather-box__div__top {
+  margin-top: 1rem;
+}
